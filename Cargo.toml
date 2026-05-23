@@ -1,0 +1,12 @@
+[package]
+name = "pizza-plugin-discovery"
+version = "0.1.0"
+edition = "2021"
+description = "Scan contrib/* crates and generate a meta-crate that wires register_all() of every Pizza analysis plugin into pizza_engine::analysis::AnalysisFactory."
+license = "Apache-2.0"
+
+[[bin]]
+name = "plugin-discovery"
+path = "src/main.rs"
+
+[workspace]
